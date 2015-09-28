@@ -1,12 +1,25 @@
-a(href="/")
-  h1= title
-h3 Full-Stack Web Developer
+.container
+  .header
+    a(href="/")
+      h1= title
+    h3 Full-Stack Web Developer
 .sidebar
-  ul
-    li 
-      a(href="/about") About
-    li TweetHelper
-    li Monopolize
-    li Road Trip Planner
-    li Capstone Project
-    li Contact
+  .container
+    ul
+      li 
+        a(href="/about") About
+      li
+        ul.projects Projects
+          li(style="display:none")
+            ul
+              li
+                a(href="/projects/tweethelper") TweetHelper
+              li
+                a(href="/projects/monopolize") Monopolize
+              li
+                a(href="/projects/road_trip_planner") Road Trip Planner
+              li
+                a(href="/projects/capstone") Capstone Project
+      li
+        a(href="/contact") Contact
+  script(src="/javascripts/sidebar.js" type="text/javascript")

@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  .main
+    .container
+      h1= project.name
+      a(href=project.github target="_blank")
+        span(class="fa fa-github") Github
+      a(href=project.production target="_blank")
+        span(class="fa fa-laptop") Production
+      p= project.description
+      h3 Type: #{project.type}
+      p Completed in #{project.completedIn} after #{project.completedAt} of instruction
+      if project.collaborators !== null
+        ul Collaborators:
+        for each in project.collaborators
+          li
+            a(href=each.github) #{each.name}
+      h3 Technologies, tools, & skills used:
+      ul
+      for each in project.technologies
+        li= each
+  script(src="/javascripts/projects.js" type="text/javascript")

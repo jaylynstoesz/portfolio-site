@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.main {
+  width: 80%;
+  float: right;
+}
+
+.sidebar {
+  width: 20%;
+  float: left;
+  text-align: right;
+}
