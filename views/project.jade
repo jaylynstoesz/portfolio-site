@@ -1,23 +1,27 @@
 extends layout
 
 block content
-  .main
+  .main.animated.fadeIn
     .container
       h1= project.name
-      a(href=project.github target="_blank")
-        span(class="fa fa-github") Github
-      a(href=project.production target="_blank")
-        span(class="fa fa-laptop") Production
+      a(class="icon" href=project.github target="_blank")
+        span(class="fa fa-github")
+        span Github
+      a(class="icon" href=project.production target="_blank")
+        span(class="fa fa-laptop")
+        span Production
       p= project.description
-      h3 Type: #{project.type}
-      p Completed in #{project.completedIn} after #{project.completedAt} of instruction
-      if project.collaborators !== null
-        ul Collaborators:
-        for each in project.collaborators
-          li
-            a(href=each.github) #{each.name}
-      h3 Technologies, tools, & skills used:
-      ul
-      for each in project.technologies
-        li= each
+      .project-tech
+        h3 Technologies, tools, & skills used:
+        ul
+        for each in project.technologies
+          li= each
+      .project-basic
+        h3 Type: #{project.type}
+        p Completed in #{project.completedIn} after #{project.completedAt} of instruction
+        if project.collaborators !== null
+          ul Collaborators:
+          for each in project.collaborators
+            li
+              a(href=each.github target="_blank") #{each.name}
   script(src="/javascripts/projects.js" type="text/javascript")

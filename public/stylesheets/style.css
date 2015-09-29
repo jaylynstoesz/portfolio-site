@@ -102,7 +102,21 @@ ul {
   width: 80%;
   float: right; }
 
+.project-basic, .project-tech {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top; }
+
 .sidebar {
   width: 20%;
   float: left;
   text-align: right; }
+  .sidebar .projects:hover {
+    cursor: pointer; }
+
+.icon {
+  display: inline-block;
+  padding-right: 20px; }
+  .icon .fa {
+    display: inline-block;
+    padding-right: 5px; }

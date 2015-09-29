@@ -11,6 +11,10 @@ router.get('/about', function (req, res, next) {
   res.render('about', { title: 'Jaylyn Stoesz' })
 })
 
+router.get('/contact', function (req, res, next) {
+  res.render('contact', { title: 'Jaylyn Stoesz' })
+})
+
 router.get('/projects/:projectId', function (req, res, next) {
   var project = lib.projects[req.params.projectId]
   res.render('project', { title: 'Jaylyn Stoesz', project: project })
