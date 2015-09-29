@@ -22,7 +22,7 @@ block content
           for each in project.technologies
             li= each
         .project-basic
-          h3 Type: #{project.type}
+          h3 #{project.type} project
           p Completed in #{project.completedIn} after #{project.completedAt} of instruction
           if project.collaborators !== null
             ul Collaborators:
