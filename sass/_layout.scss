@@ -2,12 +2,40 @@
   box-sizing: border-box;
 }
 
+body {
+  padding: 0;
+}
+
+.landing-page {
+  height: 100vh;
+  .center-block {
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20%;
+  }
+}
+
 .container {
   padding: 20px;
 }
 
+.gallery {
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.gallery-cell {
+  padding-right: 5px;
+  height: 50vh;
+}
+
 .header {
   text-align: center;
+  padding: 20px;
 }
 
 .hidden {
@@ -15,18 +43,27 @@
 }
 
 .main {
-  width: 80%;
+  width: 88%;
   float: right;
 }
 
-.project-basic, .project-tech {
-  width: 50%;
-  display: inline-block;
-  vertical-align: top;
+h2 {
+  margin-top: 0;
 }
 
+.project-info {
+  display: inline-block;
+  width: 100%;
+  .project-basic, .project-tech {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+
 .sidebar {
-  width: 20%;
+  width: 12%;
   float: left;
   text-align: right;
   .projects:hover {

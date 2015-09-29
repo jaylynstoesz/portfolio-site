@@ -35,6 +35,33 @@ a {
   text-decoration: none;
 }
 
-ul {
-  list-style-type: none;
+li {
+  list-style-type: square;
+}
+
+span.fa-arrow-circle-right {
+  display: block;
+  height: auto;
+  font-size: 30px;
+  -webkit-transition: -webkit-transform .15s linear;
+}
+
+span.fa-arrow-circle-right:hover {
+  -webkit-transition: -webkit-transform .15s linear;
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  position: relative;
+  z-index: 5;
+}
+
+.sidebar {
+  ul {
+    font-weight: 400;
+  }
+  li {
+    list-style-type: none;
+  }
+  .project {
+    font-weight: 300;
+  }
 }

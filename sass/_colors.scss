@@ -1,0 +1,19 @@
+$white: #FFFFFF;
+$primary: rgb(0, 35, 35);
+$secondary: rgb(128, 153, 153);
+
+.header {
+  background-color: $secondary;
+  h1 {
+    color: $white;
+  }
+  color: $white;
+}
+
+.landing-page {
+  background-color: $primary;
+  color: $white;
+  a {
+    color: $white;
+  }
+}
