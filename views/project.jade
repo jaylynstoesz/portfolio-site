@@ -12,9 +12,10 @@ block content
         span(class="fa fa-laptop")
         span Production
       p= project.description
-      .gallery.js-flickity(data-flickity-options='{"wrapAround" : "true", "imagesLoaded" : "true"}')
-        for each in project.images
-          img.gallery-cell(src=each alt="")
+      if project.images.length > 0
+        .gallery.js-flickity(data-flickity-options='{"wrapAround" : "true", "imagesLoaded" : "true"}')
+          for each in project.images
+            img.gallery-cell(src=each alt="")
       .project-info
         .project-tech
           h3 Technologies, tools, & skills used:
